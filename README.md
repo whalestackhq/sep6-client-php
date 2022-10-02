@@ -47,7 +47,7 @@ $response = $client->get('/withdraw', array(
 
 Returns a Stellar account and memo alongside some additional context information documented [here](https://www.coinqvest.com/en/sep6-docs#get-withdraw). Tokenized Bitcoin sent to the given account is burned on the Stellar Network and released into the Bitcoin address given in the request.
 
-##Documentation
+## Documentation
 
 Please inspect our [SEP-6 API docs](https://www.coinqvest.com/en/sep6-docs) or email us at service@coinqvest.com if you have questions.
 
