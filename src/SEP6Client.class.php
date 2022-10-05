@@ -29,7 +29,7 @@ class SEP6Client extends SEP6RESTClient {
      *
      * @var string
      */
-    var $clientVersion = '1.0.0';
+    var $clientVersion = '1.0.1';
 
     /**
      * Indicates whether requests and responses should be logged
