@@ -7,15 +7,15 @@ include('SEP6LoggingService.class.php');
  * Class SEP6Client
  *
  * PHP implementation of a Stellar SEP-6 REST client
- * see https://www.coinqvest.com/en/sep6-docs
+ * see https://www.whalestack.com/en/sep6-docs
  */
 class SEP6Client extends SEP6RESTClient {
 
     /**
-     * COINQVEST's SEP-6 transfer server
+     * Whalestack's SEP-6 transfer server
      * @var string
      */
-    var $transferServer = 'sep6.coinqvest.com';
+    var $transferServer = 'sep6.whalestack.com';
     
     /**
      * Used in the HTTP user agent (leave it as is)
@@ -29,7 +29,7 @@ class SEP6Client extends SEP6RESTClient {
      *
      * @var string
      */
-    var $clientVersion = '1.0.1';
+    var $clientVersion = '2.0.0';
 
     /**
      * Indicates whether requests and responses should be logged

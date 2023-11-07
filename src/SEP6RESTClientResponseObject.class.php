@@ -19,7 +19,7 @@ class SEP6RESTClientResponseObject {
     var $responseHeaders = null;
 
     /**
-     * The numeric HTTP status code, as given by the COINQVEST server
+     * The numeric HTTP status code, as given by the Whalestack server
      * @var integer
      */
     var $httpStatusCode = null;
