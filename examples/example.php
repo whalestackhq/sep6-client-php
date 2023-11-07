@@ -3,8 +3,8 @@
 include('../src/SEP6Client.class.php');
 
 $client = new SEP6Client(
-    'sep6.coinqvest.com',
-    '/tmp/coinqvest.log' // an optional log file location
+    'sep6.whalestack.com',
+    '/tmp/whalestack.log' // an optional log file location
 );
 
 $response = $client->get('/info');

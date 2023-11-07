@@ -36,7 +36,7 @@ class SEP6RESTClient {
         curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
         curl_setopt($ch, CURLOPT_FOLLOWLOCATION, true);
         curl_setopt($ch, CURLOPT_AUTOREFERER, true);
-        curl_setopt($ch, CURLOPT_USERAGENT, 'COINQVEST REST Client (Base)');
+        curl_setopt($ch, CURLOPT_USERAGENT, 'Whalestack SEP-6 REST Client (Base)');
         curl_setopt($ch, CURLOPT_CONNECTTIMEOUT, 15);
         curl_setopt($ch, CURLOPT_TIMEOUT, 180);
         curl_setopt($ch, CURLOPT_MAXREDIRS, 10);
@@ -48,8 +48,8 @@ class SEP6RESTClient {
             curl_setopt($ch, CURLOPT_USERPWD, $this->basicAuthUsername . ":" . $this->basicAuthPassword);
         }
 
-        array_push($headers, 'Expect:'); // prevent "HTTP/1.1 100 Continue"
-        array_push($headers, 'Content-Type: application/json; charset=UTF-8'); // set content-type
+        $headers[] = 'Expect:'; // prevent "HTTP/1.1 100 Continue"
+        $headers[] = 'Content-Type: application/json; charset=UTF-8'; // set content-type
         curl_setopt($ch, CURLOPT_HTTPHEADER, $headers);
 
         switch ($requestType) {
